@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-grotesk: var(--font-space-grotesk);
+  --font-jakarta: var(--font-plus-jakarta-sans);
+  --font-mono: var(--font-space-mono);
+  --font-dm: var(--font-dm-sans);
+  --font-roboto: var(--font-roboto);
+  --font-orbitron: var(--font-orbitron);
+  --font-playfair: var(--font-playfair-display);
+  --font-cormorant: var(--font-cormorant-garamond);
+  --font-nunito: var(--font-nunito);
+  --font-quicksand: var(--font-quicksand);
+  --font-lora: var(--font-lora);
+  --font-bungee: var(--font-bungee);
+  --font-fredoka: var(--font-fredoka);
+  --font-sora: var(--font-sora);
+  --font-poppins: var(--font-poppins);
+  --font-jetbrains: var(--font-jetbrains-mono);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
