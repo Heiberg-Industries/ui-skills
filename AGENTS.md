@@ -1,4 +1,4 @@
-# UI Skills
+# designbrief
 
 Design direction for AI-generated UI. This project contains 20 style guardrail files in `styles/`.
 

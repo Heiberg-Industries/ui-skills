@@ -5,7 +5,7 @@
 
 ## System Overview
 
-UI Skills is a content library distributed as an npm package. It provides 21 markdown style files that serve as design guardrails for AI coding assistants. There is no runtime, no build step, and no server — the "product" is the markdown files themselves, delivered to users via CLI installer or manual copy.
+designbrief is a content library distributed as an npm package. It provides 21 markdown style files that serve as design guardrails for AI coding assistants. There is no runtime, no build step, and no server — the "product" is the markdown files themselves, delivered to users via CLI installer or manual copy.
 
 ## Key Components
 
@@ -14,11 +14,11 @@ UI Skills is a content library distributed as an npm package. It provides 21 mar
 | Style files | `styles/*.md` | Core product — 21 design direction guardrails |
 | Style catalog | `styles/_index.md` | Index with mood/industry tags for style selection |
 | Style template | `STYLE-TEMPLATE.md` | Blueprint for creating new styles (16 sections) |
-| CLI installer | `bin/cli.js` | `npx ui-skills` — auto-detects tool, copies files |
+| CLI installer | `bin/cli.js` | `npx designbrief` — auto-detects tool, copies files |
 | Skill definition | `SKILL.md` | Agent Skills standard entry point (root) |
 | Codex fallback | `AGENTS.md` | Simplified instructions for tools without skill support |
-| Cursor adapter | `.cursor/rules/ui-skills.mdc` | Cursor-specific rule format |
-| Windsurf adapter | `.windsurf/rules/ui-skills.md` | Windsurf-specific rule format |
+| Cursor adapter | `.cursor/rules/designbrief.mdc` | Cursor-specific rule format |
+| Windsurf adapter | `.windsurf/rules/designbrief.md` | Windsurf-specific rule format |
 | Paste instructions | `PASTE-INSTRUCTIONS.md` | Copy-paste format for Lovable, Bolt.new, v0 |
 | npm publish workflow | `.github/workflows/publish.yml` | GitHub Action for npm releases |
 
@@ -26,7 +26,7 @@ UI Skills is a content library distributed as an npm package. It provides 21 mar
 
 There is no runtime data flow. The distribution flow is:
 
-1. User runs `npx ui-skills` (or manual install)
+1. User runs `npx designbrief` (or manual install)
 2. CLI detects which AI tool is present (Claude, Cursor, Windsurf, Copilot, Codex)
 3. CLI copies SKILL.md + styles/ into the tool's expected directory
 4. AI tool reads SKILL.md on activation → reads style files as needed
@@ -47,7 +47,7 @@ N/A — no auth. Public npm package, MIT licensed.
 | npm registry | Package distribution | `package.json` |
 | GitHub Actions | Automated npm publishing | `.github/workflows/publish.yml` |
 | GitHub | Source repository | `package.json` → `repository` |
-| Live showcase | Demo site | https://tools.heiberg.co/ui-skills |
+| Live showcase | Demo site | https://tools.heiberg.co/designbrief |
 
 ## Key Patterns
 

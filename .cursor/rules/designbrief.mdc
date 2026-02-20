@@ -1,10 +1,10 @@
 ---
-description: UI Skills — design direction for UI generation. Apply when building UI components, pages, or apps to ensure tasteful, consistent styling.
+description: designbrief — design direction for UI generation. Apply when building UI components, pages, or apps to ensure tasteful, consistent styling.
 globs: "**/*.tsx,**/*.jsx,**/*.css,**/*.html"
 alwaysApply: false
 ---
 
-# UI Skills
+# designbrief
 
 A library of 21 UI design direction files providing style guardrails for building tasteful interfaces.
 

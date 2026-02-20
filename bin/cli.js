@@ -137,7 +137,7 @@ async function promptToolSelection(tools, message) {
 // ─── Installation ────────────────────────────────────────────────
 
 function installAgentSkills(cwd, toolDir, toolName) {
-  var destDir = path.join(cwd, toolDir, 'skills', 'ui-skills');
+  var destDir = path.join(cwd, toolDir, 'skills', 'designbrief');
   fs.mkdirSync(destDir, { recursive: true });
 
   // Copy SKILL.md
@@ -193,10 +193,10 @@ function install(cwd, tool) {
         installAgentSkills(cwd, '.agents', tool.name);
         break;
       case 'cursor':
-        installAdapter(cwd, path.join('.cursor', 'rules', 'ui-skills.mdc'), path.join('.cursor', 'rules', 'ui-skills.mdc'), tool.name);
+        installAdapter(cwd, path.join('.cursor', 'rules', 'designbrief.mdc'), path.join('.cursor', 'rules', 'designbrief.mdc'), tool.name);
         break;
       case 'windsurf':
-        installAdapter(cwd, path.join('.windsurf', 'rules', 'ui-skills.md'), path.join('.windsurf', 'rules', 'ui-skills.md'), tool.name);
+        installAdapter(cwd, path.join('.windsurf', 'rules', 'designbrief.md'), path.join('.windsurf', 'rules', 'designbrief.md'), tool.name);
         break;
     }
   } catch (err) {
@@ -211,7 +211,7 @@ function install(cwd, tool) {
 
 function printHeader() {
   console.log('');
-  console.log('  ' + c.bold + 'UI Skills' + c.reset + c.dim + ' \u2014 Design direction for AI-generated UI' + c.reset);
+  console.log('  ' + c.bold + 'designbrief' + c.reset + c.dim + ' \u2014 Design direction for AI-generated UI' + c.reset);
   console.log('');
 }
 
@@ -226,10 +226,10 @@ function printSuccess() {
 
 function showHelp() {
   console.log('');
-  console.log('  ' + c.bold + 'UI Skills' + c.reset + ' \u2014 Design direction for AI-generated UI');
+  console.log('  ' + c.bold + 'designbrief' + c.reset + ' \u2014 Design direction for AI-generated UI');
   console.log('');
   console.log('  ' + c.bold + 'Usage:' + c.reset);
-  console.log('    npx ui-skills [options]');
+  console.log('    npx designbrief [options]');
   console.log('');
   console.log('  ' + c.bold + 'Options:' + c.reset);
   console.log('    --tool, -t <tools>   Target tool(s): claude, cursor, windsurf, copilot, codex');
@@ -239,12 +239,12 @@ function showHelp() {
   console.log('    --version, -v        Show version');
   console.log('');
   console.log('  ' + c.bold + 'Examples:' + c.reset);
-  console.log('    npx ui-skills                    Auto-detect your tool and install');
-  console.log('    npx ui-skills --tool claude      Install for Claude Code');
-  console.log('    npx ui-skills --tool cursor      Install for Cursor');
-  console.log('    npx ui-skills --list             Show all 21 available styles');
+  console.log('    npx designbrief                    Auto-detect your tool and install');
+  console.log('    npx designbrief --tool claude      Install for Claude Code');
+  console.log('    npx designbrief --tool cursor      Install for Cursor');
+  console.log('    npx designbrief --list             Show all 21 available styles');
   console.log('');
-  console.log('  ' + c.dim + 'Docs: https://github.com/Heiberg-Industries/ui-skills' + c.reset);
+  console.log('  ' + c.dim + 'Docs: https://github.com/Heiberg-Industries/designbrief' + c.reset);
   console.log('');
 }
 
@@ -254,7 +254,7 @@ function showVersion() {
 
 function showStyles() {
   console.log('');
-  console.log('  ' + c.bold + 'UI Skills' + c.reset + ' \u2014 21 design styles available:');
+  console.log('  ' + c.bold + 'designbrief' + c.reset + ' \u2014 21 design styles available:');
   console.log('');
   for (var i = 0; i < STYLES.length; i++) {
     var name = STYLES[i][0];
@@ -263,7 +263,7 @@ function showStyles() {
     console.log('    ' + c.bold + name + c.reset + padding + c.dim + desc + c.reset);
   }
   console.log('');
-  console.log('  ' + c.dim + 'Full style guides: https://github.com/Heiberg-Industries/ui-skills/tree/main/styles' + c.reset);
+  console.log('  ' + c.dim + 'Full style guides: https://github.com/Heiberg-Industries/designbrief/tree/main/styles' + c.reset);
   console.log('');
 }
 

@@ -1,4 +1,4 @@
-# UI Skills — Style Index
+# designbrief — Style Index
 
 A catalog of all available design directions. Use this file to recommend styles based on project context.
 

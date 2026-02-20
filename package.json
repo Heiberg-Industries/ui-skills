@@ -1,16 +1,16 @@
 {
-  "name": "TBD",
+  "name": "designbrief",
   "version": "1.0.0",
   "description": "Design direction for AI-generated UI. 20 style guardrail files that give LLMs the context to build tasteful, consistent interfaces.",
   "license": "MIT",
   "author": "Heiberg Industries (https://heiberg.co)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Heiberg-Industries/ui-skills.git"
+    "url": "https://github.com/Heiberg-Industries/designbrief.git"
   },
-  "homepage": "https://tools.heiberg.co/ui-skills",
+  "homepage": "https://tools.heiberg.co/designbrief",
   "bugs": {
-    "url": "https://github.com/Heiberg-Industries/ui-skills/issues"
+    "url": "https://github.com/Heiberg-Industries/designbrief/issues"
   },
   "keywords": [
     "ai",
@@ -27,7 +27,7 @@
     "design-system"
   ],
   "bin": {
-    "ui-skills": "./bin/cli.js"
+    "designbrief": "./bin/cli.js"
   },
   "files": [
     "bin/",

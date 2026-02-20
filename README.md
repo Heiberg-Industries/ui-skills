@@ -1,8 +1,8 @@
-# UI Skills
+# designbrief
 
 **Design direction for AI-generated UI.** 21 style guardrail files that give LLMs the context to build tasteful, consistent interfaces.
 
-[Live Showcase](https://tools.heiberg.co/ui-skills) | [MIT License](LICENSE)
+[Live Showcase](https://tools.heiberg.co/designbrief) | [MIT License](LICENSE)
 
 ## What This Is
 
@@ -41,27 +41,27 @@ Think of it as giving your AI coding assistant design taste. Each style also tea
 ### Quick Install (recommended)
 
 ```bash
-npx ui-skills
+npx designbrief
 ```
 
 Auto-detects your tool and copies the skill files into the right place. Supports Claude Code, Cursor, Windsurf, GitHub Copilot, and OpenAI Codex.
 
 ```bash
 # Or specify your tool directly:
-npx ui-skills --tool claude
-npx ui-skills --tool cursor
+npx designbrief --tool claude
+npx designbrief --tool cursor
 ```
 
 ### Via skills.sh
 
 ```bash
-npx skills add Heiberg-Industries/ui-skills
+npx skills add Heiberg-Industries/designbrief
 ```
 
 ### Via skild.sh
 
 ```bash
-skild install Heiberg-Industries/ui-skills
+skild install Heiberg-Industries/designbrief
 ```
 
 Then just ask for UI:
@@ -78,13 +78,13 @@ Then just ask for UI:
 
 ```bash
 # Claude Code
-git clone --depth 1 https://github.com/Heiberg-Industries/ui-skills.git .claude/skills/ui-skills
+git clone --depth 1 https://github.com/Heiberg-Industries/designbrief.git .claude/skills/designbrief
 
 # OpenAI Codex CLI
-git clone --depth 1 https://github.com/Heiberg-Industries/ui-skills.git .agents/skills/ui-skills
+git clone --depth 1 https://github.com/Heiberg-Industries/designbrief.git .agents/skills/designbrief
 
 # GitHub Copilot (VS Code)
-git clone --depth 1 https://github.com/Heiberg-Industries/ui-skills.git .github/skills/ui-skills
+git clone --depth 1 https://github.com/Heiberg-Industries/designbrief.git .github/skills/designbrief
 ```
 
 </details>
@@ -93,10 +93,10 @@ git clone --depth 1 https://github.com/Heiberg-Industries/ui-skills.git .github/
 <summary>Cursor</summary>
 
 ```bash
-git clone --depth 1 https://github.com/Heiberg-Industries/ui-skills.git /tmp/ui-skills
-cp -r /tmp/ui-skills/.cursor/rules/ .cursor/rules/
-cp -r /tmp/ui-skills/styles/ styles/
-rm -rf /tmp/ui-skills
+git clone --depth 1 https://github.com/Heiberg-Industries/designbrief.git /tmp/designbrief
+cp -r /tmp/designbrief/.cursor/rules/ .cursor/rules/
+cp -r /tmp/designbrief/styles/ styles/
+rm -rf /tmp/designbrief
 ```
 
 </details>
@@ -105,10 +105,10 @@ rm -rf /tmp/ui-skills
 <summary>Windsurf</summary>
 
 ```bash
-git clone --depth 1 https://github.com/Heiberg-Industries/ui-skills.git /tmp/ui-skills
-cp -r /tmp/ui-skills/.windsurf/rules/ .windsurf/rules/
-cp -r /tmp/ui-skills/styles/ styles/
-rm -rf /tmp/ui-skills
+git clone --depth 1 https://github.com/Heiberg-Industries/designbrief.git /tmp/designbrief
+cp -r /tmp/designbrief/.windsurf/rules/ .windsurf/rules/
+cp -r /tmp/designbrief/styles/ styles/
+rm -rf /tmp/designbrief
 ```
 
 </details>
@@ -136,7 +136,7 @@ Now build a pricing page following these guidelines.
 
 ## How It Works
 
-UI Skills follows the [Agent Skills open standard](https://agentskills.io). When activated, the skill:
+designbrief follows the [Agent Skills open standard](https://agentskills.io). When activated, the skill:
 
 1. **Determines the style** — from the user's request, or by recommending styles based on project context
 2. **Loads the style file** — reads the full guardrails from `styles/{name}.md`

@@ -1,4 +1,4 @@
-# CLAUDE.md — UI Skills
+# CLAUDE.md — designbrief
 
 ## Session Start
 
@@ -54,23 +54,23 @@ Before implementing, raise the 2-3 most relevant:
 
 ## Project Overview
 
-UI Skills is a library of 21 UI design direction files that serve as style guardrails for AI-generated interfaces. The styles are **guiding, not prescriptive** — they define aesthetic DNA, not pixel-perfect specifications. Distributed as an npm package and follows the [Agent Skills open standard](https://agentskills.io).
+designbrief is a library of 21 UI design direction files that serve as style guardrails for AI-generated interfaces. The styles are **guiding, not prescriptive** — they define aesthetic DNA, not pixel-perfect specifications. Distributed as an npm package and follows the [Agent Skills open standard](https://agentskills.io).
 
 ## Key Commands
 
 ```bash
 npm pack --dry-run     # Verify package contents
-npx ui-skills          # Test CLI installer
+npx designbrief          # Test CLI installer
 ```
 
 ## Repository Structure
 
 ```
-ui-skills/
+designbrief/
 ├── styles/                    # The core product — 21 style definition files
 │   ├── _index.md              # Catalog with mood/industry tags and recommendation matrix
 │   └── {style-name}.md        # Individual style guardrails
-├── bin/cli.js                 # CLI installer (npx ui-skills)
+├── bin/cli.js                 # CLI installer (npx designbrief)
 ├── SKILL.md                   # Agent Skills standard — skill definition (root)
 ├── AGENTS.md                  # Codex fallback instructions
 ├── STYLE-TEMPLATE.md          # Blank template for new styles

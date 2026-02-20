@@ -1,9 +1,9 @@
 ---
-name: ui-skills
+name: designbrief
 description: A library of UI design direction files that provide style guardrails for building tasteful, consistent interfaces. Use when building any UI — select a style or let the AI recommend one based on the project context.
 ---
 
-# UI Skills
+# designbrief
 
 A library of rich design direction files — one per UI style — that provide guardrails for building tasteful, consistent interfaces without prescribing exact values.
 

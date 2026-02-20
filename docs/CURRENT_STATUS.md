@@ -11,17 +11,17 @@
 - CLI installer (bin/cli.js) — auto-detects tool, supports Claude Code, Cursor, Windsurf, Copilot, Codex
 - GitHub Action for automated npm publishing (.github/workflows/publish.yml)
 - Agent Skills standard compliance (SKILL.md)
-- Cursor adapter (.cursor/rules/ui-skills.mdc)
-- Windsurf adapter (.windsurf/rules/ui-skills.md)
+- Cursor adapter (.cursor/rules/designbrief.mdc)
+- Windsurf adapter (.windsurf/rules/designbrief.md)
 - Paste instructions for Lovable, Bolt.new, v0
-- Live showcase at https://tools.heiberg.co/ui-skills
+- Live showcase at https://tools.heiberg.co/designbrief
 
 ## What's Blocked
 
 | Blocker | Depends On | Impact |
 |---------|-----------|--------|
 | npm publishing | Package name decision (TBD in package.json) | Can't distribute via npm |
-| Package naming | Resolution of ibelick/ui-skills conflict | Blocks npm, skills.sh, skild.sh |
+| Package naming | Resolution of ibelick/designbrief conflict | Blocks npm, skills.sh, skild.sh |
 
 ## Technical Debt
 

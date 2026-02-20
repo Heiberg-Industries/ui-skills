@@ -1,4 +1,4 @@
-# UI Skills
+# designbrief
 
 A library of 21 UI design direction files providing style guardrails for building tasteful interfaces.
 

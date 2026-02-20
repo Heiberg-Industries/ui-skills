@@ -1,4 +1,4 @@
-# UI Skills — Paste Instructions
+# designbrief — Paste Instructions
 
 For tools that don't support file-based skills (Lovable, Bolt.new, v0), paste the instructions below into your tool's custom instructions or knowledge base.
 
@@ -9,7 +9,7 @@ For tools that don't support file-based skills (Lovable, Bolt.new, v0), paste th
 Go to **Manage Knowledge** and paste this:
 
 ```
-I use UI Skills for design direction. When building UI, follow these rules:
+I use designbrief for design direction. When building UI, follow these rules:
 
 1. Ask me which style to use, or suggest one based on my project
 2. Available styles: Anti-Design, Art Deco, Aurora, Bauhaus, Bento Grid, Claymorphism, Corporate Modern, Dark Mode Premium, Flat Design, Freeform, Glassmorphism, Japandi, Material Design, Minimalism, Neubrutalism, Neumorphism, Organic, Retro-Futurism, Skeuomorphism, Swiss Design, Y2K Revival
@@ -21,7 +21,7 @@ I use UI Skills for design direction. When building UI, follow these rules:
 8. Verify contrast ratios and focus states per the style's Accessibility section
 9. Prioritize readability and accessibility over style purity
 
-For the full style guide for each style, see: https://github.com/Heiberg-Industries/ui-skills/tree/main/styles
+For the full style guide for each style, see: https://github.com/Heiberg-Industries/designbrief/tree/main/styles
 ```
 
 ---
@@ -31,14 +31,14 @@ For the full style guide for each style, see: https://github.com/Heiberg-Industr
 Go to **Project Settings → System Prompt** and paste:
 
 ```
-Follow the UI Skills design system. When building UI:
+Follow the designbrief design system. When building UI:
 
 1. Ask which style to use or suggest based on context
 2. Available: Anti-Design, Art Deco, Aurora, Bauhaus, Bento Grid, Claymorphism, Corporate Modern, Dark Mode Premium, Flat Design, Freeform, Glassmorphism, Japandi, Material Design, Minimalism, Neubrutalism, Neumorphism, Organic, Retro-Futurism, Skeuomorphism, Swiss, Y2K Revival
 3. Apply the chosen style consistently — typography, color, spacing, components, motion, dark mode, responsive, content voice, icons, accessibility
 4. Ask about dark mode preference — each style has specific dark/light guidance
 5. Ensure accessibility: contrast ratios, focus states, reduced motion support
-6. Full style guides: https://github.com/Heiberg-Industries/ui-skills/tree/main/styles
+6. Full style guides: https://github.com/Heiberg-Industries/designbrief/tree/main/styles
 
 Style quick reference:
 - Bauhaus: 0px radius, 2px black borders, primary colors, geometric shapes, no shadows
@@ -57,11 +57,11 @@ Style quick reference:
 Go to **Settings → Custom Instructions** and paste:
 
 ```
-When generating UI, use the UI Skills design system:
+When generating UI, use the designbrief design system:
 
 Available styles (21 total): Anti-Design, Art Deco, Aurora, Bauhaus, Bento Grid, Claymorphism, Corporate Modern, Dark Mode Premium, Flat Design, Freeform, Glassmorphism, Japandi, Material Design, Minimalism, Neubrutalism, Neumorphism, Organic, Retro-Futurism, Skeuomorphism, Swiss, Y2K Revival
 
-Full style guides with typography, color, spacing, components, motion, dark mode, responsive, content voice, icons, and accessibility: https://github.com/Heiberg-Industries/ui-skills/tree/main/styles
+Full style guides with typography, color, spacing, components, motion, dark mode, responsive, content voice, icons, and accessibility: https://github.com/Heiberg-Industries/designbrief/tree/main/styles
 
 When I mention a style name, look up its guide and apply the design direction consistently. Each guide covers dark/light mode, responsive behavior, accessibility, and content tone.
 ```
