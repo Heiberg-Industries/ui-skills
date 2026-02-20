@@ -1,6 +1,6 @@
 {
   "name": "designbrief",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Design direction for AI-generated UI. 20 style guardrail files that give LLMs the context to build tasteful, consistent interfaces.",
   "license": "MIT",
   "author": "Heiberg Industries (https://heiberg.co)",
