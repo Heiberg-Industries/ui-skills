@@ -27,10 +27,12 @@
     "design-system"
   ],
   "bin": {
-    "designbrief": "./bin/cli.js"
+    "designbrief": "./bin/cli.js",
+    "designbrief-mcp": "./bin/mcp.mjs"
   },
   "files": [
     "bin/",
+    "lib/",
     "styles/",
     "SKILL.md",
     "AGENTS.md",
@@ -39,6 +41,10 @@
     "LICENSE",
     "README.md"
   ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.0"
+  },
   "engines": {
     "node": ">=18.0.0"
   }
